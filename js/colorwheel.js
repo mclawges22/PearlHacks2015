@@ -25,7 +25,7 @@ function turquoiseGirl() {
 }
 function blueGirl() {
 	$("#girl").css("background-color", "#0A00BE");
-	$("#hair").attr("fill", "#0071FF");
+	$("#hair").attr("fill", "#1F3CE8");
 }
 function purpleGirl() {
 	$("#girl").css("background-color", "#462959");
