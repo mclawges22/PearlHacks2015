@@ -144,6 +144,40 @@ body {
 	position:absolute;
 	left:0;
 	top:0;
-	padding:50px 0;
+	padding:120px 0 50px 0;
 }
+	#about-section #intro {
+		margin-left:5%;
+		padding-top:27px;
+		font-size: 15px;
+		font-weight: 300
+	}
+		#about-section #intro strong {
+			font-size:60px;
+			font-family: 'LMP';
+			color:#a27994;
+			letter-spacing: 2px;
+			line-height:1.4em;
+		}
+	#about-section p {
+		float:left;
+		width:24.5%;
+		margin:60px 4%;
+		font-size:14px;
+		font-weight: 350
+	}
+		#about-section p em {
+			color:#462959;
+			font-size:20px;
+		}
+	#about-section #middle {
+		width:32%;
+		margin:60px 1%;
+	}
+	#about-section #side-girl {
+		width:330px;
+		position:absolute;
+		right:0;
+		bottom: 0;
+	}
 
