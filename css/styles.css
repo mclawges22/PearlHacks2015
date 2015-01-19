@@ -139,7 +139,7 @@ body {
 		padding:50px 0;
 		height:100%;
 	}
-#about-section {
+#about-section, #schedule {
 	width:100%;
 	position:absolute;
 	left:0;
@@ -153,7 +153,7 @@ body {
 		font-weight: 300
 	}
 		#about-section #intro strong {
-			font-size:60px;
+			font-size:50px;
 			font-family: 'LMP';
 			color:#a27994;
 			letter-spacing: 2px;
@@ -180,4 +180,12 @@ body {
 		right:0;
 		bottom: 0;
 	}
+a {
+	font-family: inherit;
+	text-decoration: none;
+	color:inherit;
+}
+a:hover {
+	text-decoration: underline;
+}
 
