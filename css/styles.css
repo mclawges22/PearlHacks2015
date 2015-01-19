@@ -40,26 +40,110 @@ table {
 	border-spacing: 0;
 }
 
+body {
+	width: 100%;
+}
+
+@font-face {
+    font-family: 'LMP';
+    src: url('littlemisspriss-webfont.eot');
+    src: url('littlemisspriss-webfont.eot?#iefix') format('embedded-opentype'),
+         url('littlemisspriss-webfont.woff2') format('woff2'),
+         url('littlemisspriss-webfont.woff') format('woff'),
+         url('littlemisspriss-webfont.ttf') format('truetype'),
+         url('littlemisspriss-webfont.svg#littlemissprissmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.menu {
+	width:40%;
+	position: fixed;
+	z-index:100;
+	top:0;
+	font-size: 48px;
+	color: #fff;
+}
+	.menu p {
+		width:20%;
+		margin:15px 7%;
+		font-family: 'LMP';
+		letter-spacing: 2px;
+	}
+	#left {
+		left:1%;
+	}
+		#left p {
+			float:left;
+		}
+	#right {
+		right:2%;
+		text-align: right;
+	}
+		#right p {
+			float:right;
+		}
+		#right p:last-child {
+			margin-right: 15%;
+		}
+
 #girl {
-	width:100%;
 	position:absolute;
 	z-index:1;
 	left:0;
 	top:0;
-	padding:50px 35%;
+	padding:10px 35%;
 	background-color: #462959;
 }
+#girl-svg {
+	margin-left:-5px;
+}
+	#girl h2 {
+		text-align: center;
+		color:#fff;
+		font-family: 'LMP';
+		letter-spacing: 2px;
+		font-size: 36px;
+		width:110%;
+		margin-top:7px;
+		line-height:1em;
+		margin-left:-8%;
+	}
+	#girl .tagline {
+		font-size: 24px;
+		margin-top:3px;
+	}
+	#girl .down-carrot {
+		margin:10px 41%;
+		margin-bottom:0;
+		padding-bottom:0;
+	}
+#down-triangle {
+	position:absolute;
+	left:32.7%;
+	z-index:50;
+}
+
 #color-sections {
 	width:100%;
 	position:absolute;
 	z-index:50;
 	left:0;
 	top:0;
-	height:500px;
+	height:100%;
 }
 	#color-sections .color-section {
-		width:10%;
+		width:12.5%;
 		float:left;
 		padding:50px 0;
-		height:500px;
+		height:100%;
 	}
+#about-section {
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	padding:50px 0;
+}
+
