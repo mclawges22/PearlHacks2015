@@ -13,12 +13,10 @@ $( document ).ready(function() {
     $("#sponsors-section").css("top", 3*windowHeight);
 	if (windowWidth < 950 && windowWidth > 700){
 		$("#schedule-section").css("top", (2*windowHeight)+150);
-		$("#girl").css('top', (windowHeight*-1) + 50);
 	} else if (700 > windowWidth) {
 		$("#schedule-section").css("top", (2*windowHeight)+600);
 	} else {
 		$("#schedule-section").css("top", 2*windowHeight);
-		$("#girl").css('top', (windowHeight*-1) + 50);
 	}
 
     $(window).scroll(function () {
