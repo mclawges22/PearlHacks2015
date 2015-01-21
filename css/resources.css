@@ -1,0 +1,113 @@
+@font-face{
+	font-family:LMP;
+	src:url('LittleMissPriss.ttf');
+}
+body {
+	background-color: #000;
+	margin:0;
+}
+#logodiv {
+	background-color: #fff;
+	width:20%;
+	height:355px;
+	position:absolute;
+	left:40%;
+	opacity:1;
+}
+#logo {
+	margin-top:10px;
+	width:100%;
+	opacity:1;
+}
+a {
+	width:20%;
+	opacity:.5;
+	text-decoration:none;
+}
+a:hover, a:active {
+	opacity:1;
+}
+iframe {
+	
+	width:100%;
+	height:175px;
+}
+iframe:first-child {
+	
+}
+h3 {
+	width:200px;
+	height:175px;
+	padding:0 20px;
+	font-family:LMP;
+	font-weight: 500;
+	color:#fff;
+	font-size:36px;
+	line-height:41px;
+	text-align: center;
+}
+
+#femgineer {
+	position: absolute;
+	top:0px;
+	left:20%;
+}
+#inhack {
+	position: absolute;
+	top:175px;
+	left:0px;
+	padding-top:20px;
+}
+#siliconvalley {
+	position: absolute;
+	top:0px;
+	left:60%;
+	padding-top:10px;
+}
+#youtube1 {
+	position: absolute;
+	top:5px;
+	left:5px;
+}
+#youtube2 {
+	position: absolute;
+	top:175px;
+	left:20%;
+}
+#youtube3 {
+	position: absolute;
+	top:5px;
+	right:5px;
+}
+#youtube4 {
+	position: absolute;
+	top:175px;
+	right:20%;
+}
+#video5 {
+	position: absolute;
+	width:40%;
+	left:29%;
+	top:355px;
+	z-index:-50;
+}
+#techelite {
+	position: absolute;
+	top:175px;
+	right:0;
+}
+#arentmorewomen {
+	position: absolute;
+	top:380px;
+	left:0;
+}
+#arentmorewomen h3 {
+	width:250px;
+	margin-left:30px;
+}
+
+@media screen and (min-width: 1150px) {
+	#video5 {
+		top:385px;
+	}
+}
