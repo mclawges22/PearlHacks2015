@@ -139,7 +139,7 @@ body {
 		padding:50px 0;
 		height:100%;
 	}
-#about-section, #schedule {
+#about-section, #schedule-section {
 	width:100%;
 	position:absolute;
 	left:0;
@@ -189,3 +189,46 @@ a:hover {
 	text-decoration: underline;
 }
 
+#schedule-section .left, #schedule-section .right {
+	float:left;
+	width:40%;
+	margin:0 5%;
+	height:100%;
+}
+#schedule-section .right {
+
+}
+#schedule-section h4 {
+	margin-left:16%;
+	font-family: LMP;
+	font-size: 48px;
+	letter-spacing: 2px
+
+}
+
+	#schedule-section h4 em{
+		font-family: inherit;
+		font-weight: normal;
+		color:#462959;
+	}
+	#schedule-section div {
+		width:100%;
+		height:25px;
+	}
+	#schedule-section p {
+		font-size:18px;
+		font-weight:300;
+	}
+#schedule-section .time {
+	float: left;
+	font-family: LMP;
+	font-size:24px;
+	letter-spacing: 1.5px;
+	width:100px;
+}
+#schedule-section .description {
+	margin-top:8px;
+	font-size:16px;
+	line-height: 1.8em;
+	
+}
