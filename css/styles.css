@@ -93,37 +93,65 @@ body {
 	z-index:1;
 	left:0;
 	top:0;
-	padding:10px 35%;
+	width:36%;
+	padding:10px 32%;
 	background-color: #462959;
 }
 #girl-svg {
-	margin-left:-5px;
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+	vertical-align: middle;
+	overflow: hidden;
 }
+.svg-content {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
 	#girl h2 {
 		text-align: center;
 		color:#fff;
 		font-family: 'LMP';
 		letter-spacing: 2px;
 		font-size: 36px;
-		width:110%;
+		width:100%;
 		margin-top:7px;
 		line-height:1em;
-		margin-left:-8%;
+		
 	}
 	#girl .tagline {
 		font-size: 24px;
 		margin-top:3px;
 	}
 	#girl .down-carrot {
-		margin:10px 41%;
+		margin:10px 45%;
 		margin-bottom:0;
 		padding-bottom:0;
 	}
 #down-triangle {
-	position:absolute;
-	left:32.7%;
+	display: inline-block;
+	position: relative;
+	width: 35%;
+	padding-bottom: 100%;
+	vertical-align: middle;
+	overflow: hidden;
+	left:32.5%;
 	z-index:50;
 }
+#down-triangle-mobile {
+	display:none;
+	width:100%;
+	left:0;
+	position: relative;
+	padding-bottom: 100%;
+	vertical-align: middle;
+	overflow: hidden;
+	z-index:50;
+}
+
 
 #color-sections {
 	width:100%;
@@ -139,7 +167,7 @@ body {
 		padding:50px 0;
 		height:100%;
 	}
-#about-section, #schedule-section {
+#about-section, #schedule-section, #sponsors-section {
 	width:100%;
 	position:absolute;
 	left:0;
@@ -152,7 +180,7 @@ body {
 		font-size: 15px;
 		font-weight: 300
 	}
-		#about-section #intro strong {
+		#about-section #intro strong, #about-section #end strong, #schedule-section h4 strong, #sponsors-section strong {
 			font-size:50px;
 			font-family: 'LMP';
 			color:#a27994;
@@ -170,6 +198,7 @@ body {
 			color:#462959;
 			font-size:20px;
 		}
+	
 	#about-section #middle {
 		width:32%;
 		margin:60px 1%;
@@ -180,6 +209,7 @@ body {
 		right:0;
 		bottom: 0;
 	}
+
 a {
 	font-family: inherit;
 	text-decoration: none;
@@ -189,28 +219,23 @@ a:hover {
 	text-decoration: underline;
 }
 
-#schedule-section .left, #schedule-section .right {
-	float:left;
-	width:40%;
-	margin:0 5%;
-	height:100%;
-}
-#schedule-section .right {
-
-}
-#schedule-section h4 {
-	margin-left:16%;
-	font-family: LMP;
-	font-size: 48px;
-	letter-spacing: 2px
-
-}
-
-	#schedule-section h4 em{
-		font-family: inherit;
-		font-weight: normal;
-		color:#462959;
+	#schedule-section .left, #schedule-section .right {
+		float:left;
+		width:37%;
+		margin:30px 5% 0 8%;
+		height:90%;
 	}
+	#schedule-section h4, #sponsors-section h4 em {
+		margin-left:14%;
+		font-family: 'LMP';
+		font-size: 48px;
+		letter-spacing: 2px
+	}
+		#schedule-section h4 em{
+			font-family: inherit;
+			font-weight: normal;
+			color:#462959;
+		}
 	#schedule-section div {
 		width:100%;
 		height:25px;
@@ -219,16 +244,188 @@ a:hover {
 		font-size:18px;
 		font-weight:300;
 	}
-#schedule-section .time {
-	float: left;
-	font-family: LMP;
-	font-size:24px;
-	letter-spacing: 1.5px;
-	width:100px;
+	#schedule-section .time {
+		float: left;
+		font-family: LMP;
+		font-size:24px;
+		letter-spacing: 1.5px;
+		width:100px;
+	}
+	#schedule-section .description {
+		margin-top:8px;
+		font-size:16px;
+		line-height: 1.8em;	
+	}
+	#schedule-section .short {
+		display: none;
+	}
+		#schedule-section h4:last-child{
+			margin-top:30px;
+			margin-left:0;
+		}
+		#schedule-section h4 strong {
+			font-size:30px;
+			line-height: 1em;
+		}
+		#schedule-section .blurb {
+			margin:20px 0;
+			margin-left:70px;
+			width:100%;
+		}
+#sponsors-section {
+	padding-top: 100px;
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
 }
-#schedule-section .description {
-	margin-top:8px;
-	font-size:16px;
-	line-height: 1.8em;
+	#sponsors-section h4, #sponsors-section p, #sponsors-section h4 em {
+		text-align: center;
+		width:100%;
+		margin:0;
+	}
+		#sponsors-section p strong {
+			font-size: 30px
+		}
+
+	#sponsors-section .platinum {
+		width:30%;
+		margin:0 7% 0 12.5%;
+	}
+		#sponsors-section .platinum:nth-of-type(even) {
+			margin:0 12.5% 0 7%;
+		}
+	#sponsors-section .gold {
+		width:22%;
+		margin:0 13.5%;
+	}
+
+	#sponsors-section .silver {
+		width:23%;
+		margin:0 13.5%;
+	}
+
+	#sponsors-section .copper {
+		width:15%;
+		margin:0 2% 0 2%;
+		padding:100px 0;
+	}
+	#sponsors-section .ph {
+		padding:50px 0;
+	}
+	#sponsors-section img {
+		padding-top:20px;
+	}
+/* styles for small desktop / tablet */
+@media screen and (max-width: 1100px) {
+	.menu {
+		font-size: 40px;
+	}
+	.menu p {
+		margin:15px 8%;
+	}
+	#girl {
+		width:40%;
+		padding:10px 30%;
+	}
+	#about-section, #schedule-section, #sponsors-section {
+		padding:90px 0 80px 0;
+	}
 	
 }
+@media screen and (max-width: 950px) {
+	.menu {
+		font-size: 36px;
+	}
+	.menu p {
+		margin:15px 12%;
+	}
+	#left {
+		left:-1%;
+	}
+	#girl {
+		width:48%;
+		padding:10px 26%;
+	}
+	#side-girl {
+		display: none;
+	}
+	
+	#about-section #middle {
+		width:50%;
+		margin:60px 1%;
+		margin-bottom:10px;
+		padding-bottom:10px;
+	}
+	#about-section p {
+		width:29%;
+		margin:60px 6%;
+	}
+	#about-section #end {
+		width:50%;
+		float:none;
+		margin-left:41%;
+		margin-top:0px;
+		padding-top:0px;
+	}
+	#about-section #intro #register-1 {
+		font-size: 40px
+	}
+	#schedule-section .description {
+		display: none;
+	}
+	#schedule-section .short {
+		display: inline;
+	}
+	#schedule-section h4 strong {
+		font-size:22px;
+	}
+	#schedule-section .blurb {
+		font-size: 18px;
+		margin-left:30px;
+	}
+
+}
+
+/* styles for mobile */
+@media screen and (max-width: 700px) {
+	.menu {
+		display: none;
+	}
+	#girl {
+		width:100%;
+		padding-left:0;
+		padding-right:0;
+	}
+	#girl-svg {
+		width:80%;
+		margin:30px 10%;
+		padding-bottom:80%;
+	}
+	#girl h2, #girl .tagline {
+	}
+	#down-triangle {
+		display: none;
+	}
+	#down-triangle-mobile {
+		display:inline-block;
+	}
+	#about-section p {
+		float:none;
+		width:84%;
+		margin:20px 8% !important;
+	}
+	#about-section #intro {
+		margin-top:60px
+	}
+	#about-section #middle, #about-section #end {
+		width:84%;
+		margin:20px 8% !important;
+	}
+	#register-1 {
+		display:none;
+	}
+}
+
+
+
+
