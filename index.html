@@ -17,11 +17,17 @@
     	<!-- JavaScript go in this file -->
     	<script src="js/colorwheel.js"></script>
 		
+    	<!-- JQuery color animator -->
+    	<script src="js/jquery.color.js"></script>
+
+    	<!-- svg color animator -->
+    	<script src="js/mina.js"></script>
+
 	</head>
 <body>
 	<div id="left" class="menu">
-		<p><a href="#about-section">register</a></p>
-		<p><a href="#schedule">schedule</a></p>
+		<p><a id="register" href="#about-section">register</a></p>
+		<p><a id="schedule" href="#schedule-section">schedule</a></p>
 	</div>
 	<div id="right" class="menu">
 		<p><a href="contact.html">contact</a></p>
@@ -438,7 +444,35 @@
 </g>
 </svg>
 	</div>
-	<div id="schedule">
+	<div id="schedule-section">
+		<div class="left">
+			<h4><em>Saturday</em></h4>
+			<div><p class="time">8:30a.m.</p><p class="description">Registration and breakfast</p></div>
+			<div><p class="time">9:30a.m.</p><p class="description">Opening ceremony and keynote speaker</p></div>
+			<div><p class="time">10:30a.m.</p><p class="description">Workshop I (options to come)</p></div>
+			<div><p class="time">12:30p.m.</p><p class="description">Lunch and sponsor fair</p></div>
+			<div><p class="time">1:30p.m.</p><p class="description">Workshop II (options to come)</p></div>
+			<div><p class="time">3:30p.m.</p><p class="description">Break</p></div>
+			<div><p class="time">4:00p.m.</p><p class="description">Workshop III (options to come)</p></div>
+			<div><p class="time">6:00p.m.</p><p class="description">Dinner with mentors (ask them anything!)</p></div>
+
+			<div><p class="time" style="text-align:center;margin:10px 0;margin-left:-20px;width:100%">Work on hackathon projects<br>
+			Tech talks by the Pearl Hacks sponsors</p></div>
+
+			<div><p class="time">11:00p.m.</p><p class="description">Surprise event!</p></div>
+			<div style="margin:50px"><p class="time">12:00p.m.</p><p class="description">Surprise event!</p></div>
+			
+		</div>
+		<div class="right">
+			<h4><em>Sunday</em></h4>
+			<div><p class="time">8:30a.m.</p><p class="description">Registration and breakfast</p></div>
+			<div><p class="time">8:30a.m.</p><p class="description">Registration and breakfast</p></div>
+			<div><p class="time">8:30a.m.</p><p class="description">Registration and breakfast</p></div>
+			<div><p class="time">8:30a.m.</p><p class="description">Registration and breakfast</p></div>
+			<div><p class="time">8:30a.m.</p><p class="description">Registration and breakfast</p></div>
+			<div><p class="time">8:30a.m.</p><p class="description">Registration and breakfast</p></div>
+			<div><p class="time">8:30a.m.</p><p class="description">Registration and breakfast</p></div>
+		</div>
 	</div>
 
 </body>
