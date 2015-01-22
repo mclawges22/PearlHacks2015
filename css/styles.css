@@ -426,6 +426,13 @@ a:hover {
 	}
 }
 
-
+@media screen and (max-height: 650px) {
+	#girl-svg {
+		width:60%;
+		margin-left:20%;
+		margin-right:20%;
+		padding-bottom: 60%
+	}
+}
 
 
