@@ -428,10 +428,10 @@ a:hover {
 
 @media screen and (max-height: 650px) {
 	#girl-svg {
-		width:60%;
-		margin-left:20%;
-		margin-right:20%;
-		padding-bottom: 60%
+		width:50%;
+		margin-left:25%;
+		margin-right:25%;
+		padding-bottom: 50%
 	}
 }
 
