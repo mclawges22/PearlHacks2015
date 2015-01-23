@@ -95,7 +95,6 @@ function pinkGirl() {
 	$("#girl").animate({
 	    "background-color": "#f492a7"
 	  }, 700 );
-	$("#girl").css("background-color", "#f492a7");
 	$(".hair").attr("fill", "#f44780");
 	$(".shape").attr("fill", "#f44780");
 	$("em").css("color", "#f44780");
@@ -106,7 +105,6 @@ function redGirl() {
 	$("#girl").animate({
 	    "background-color": "#ff7a65"
 	  }, 700 );
-	$("#girl").css("background-color", "#ff7a65");
 	$(".hair").attr("fill", "#b73023");
 	$(".shape").attr("fill", "#b73023");
 	$("em").css("color", "#ff7a65");
@@ -122,7 +120,6 @@ function orangeGirl() {
 	$("#girl").animate({
 	    "background-color": "#ffb35c"
 	  }, 700 );
-	$("#girl").css("background-color", "#ffb35c");
 	$(".hair").attr("fill", "#ff8700");
 	$(".shape").attr("fill", "#ff8700");
 	$("em").css("color", "#ff8700");
@@ -132,7 +129,6 @@ function yellowGirl() {
 	$("#girl").animate({
 	    "background-color": "#FFE06C"
 	  }, 700 );
-	$("#girl").css("background-color", "#ffe06c");
 	$(".hair").attr("fill", "#FCD100");
 	$(".shape").attr("fill", "#FCD100");
 	$("em").css("color", "#FCD100");
@@ -142,7 +138,6 @@ function greenGirl() {
 	$("#girl").animate({
 	    "background-color": "#00B50D"
 	  }, 700 );
-	$("#girl").css("background-color", "#00B50D");
 	$(".hair").attr("fill", "#086108");
 	$(".shape").attr("fill", "#086108");
 	$("em").css("color", "#086108");
@@ -152,7 +147,6 @@ function turquoiseGirl() {
 	$("#girl").animate({
 	    "background-color": "#08B5EE"
 	  }, 700 );
-	$("#girl").css("background-color", "#08B5EE");
 	$(".hair").attr("fill", "#00DCB4");
 	$(".shape").attr("fill", "#00DCB4");
 	$("em").css("color", "#08B5EE");
@@ -162,7 +156,6 @@ function blueGirl() {
 	$("#girl").animate({
 	    "background-color": "#0b31aa"
 	  }, 700 );
-	$("#girl").css("background-color", "#0b31aa");
 	$(".hair").attr("fill", "#3291F9");
 	$(".shape").attr("fill", "#3291F9");
 	$("em").css("color", "#0b31aa");
@@ -172,7 +165,6 @@ function purpleGirl() {
 	$("#girl").animate({
 	    "background-color": "#462959"
 	  }, 700 );
-	$("#girl").css("background-color", "#462959");
 	$(".hair").attr("fill", "#a27994");
 	$(".shape").attr("fill", "#a27994");
 	$("em").css("color", "#462959");
