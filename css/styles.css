@@ -373,6 +373,9 @@ a:hover {
 .youtube h2, .youtube p {
 	margin-left:30px;
 }
+.events img {
+	width:100%;
+}
 
 @media screen and (max-height: 600px) {
 	#girl-svg {

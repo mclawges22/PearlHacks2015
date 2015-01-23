@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+	$("#pearls").show();
     var windowHeight = $(window).height() - 20;
     var windowWidth = $(window).width();
     $("#color-sections").css("height", windowHeight);
