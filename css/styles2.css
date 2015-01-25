@@ -1,0 +1,130 @@
+/* Little Miss Priss font import */
+@font-face {
+    font-family: 'LMP';
+    src: url('littlemisspriss-webfont.eot');
+    src: url('littlemisspriss-webfont.eot?#iefix') format('embedded-opentype'),
+         url('littlemisspriss-webfont.woff2') format('woff2'),
+         url('littlemisspriss-webfont.woff') format('woff'),
+         url('littlemisspriss-webfont.ttf') format('truetype'),
+         url('littlemisspriss-webfont.svg#littlemissprissmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'LMP';
+	letter-spacing: 2px;
+}
+
+a {
+	font-family: inherit;
+	text-decoration: none;
+	color: inherit;
+}
+a:hover, a:active {
+	text-decoration: none;
+    border-bottom: 2px solid #ffffff;
+	color: inherit;
+}
+
+/** Navbar **/
+#menu-wrapper {
+	background-color: #462959;
+	border:none;
+}
+	.menu {
+		text-align: center;
+		color: #ffffff;
+		font-family: 'LMP';
+		letter-spacing: 2px;
+		font-size: 48px;
+		padding-bottom: 5px;
+	}
+	@media screen and (max-width: 1100px) {
+		.menu {
+			font-size:44px;
+		}
+	}
+	@media screen and (max-width: 900px) {
+		.menu {
+			font-size:40px;
+		}
+	}
+
+/** First panel - #girl **/
+#girl {
+	background-color: #462959;
+}
+	#girl-inner {
+		z-index: 1050;
+		margin-top:20px;
+	}
+		#girl-inner #cross-leg {
+			width: 120%;
+			margin-left: -10%;
+		}		
+		
+	#girl h2 {
+		text-align: center;
+		color: #ffffff;
+		font-size: 36px;
+		margin: 5px 0;
+		width:160%;
+		margin-left:-30%;
+	}
+		#girl .tagline {
+			font-size: 26px;
+		}
+		#girl .down-carrot {
+			margin:10px 45%;
+			margin-bottom:0;
+			padding-bottom:0;
+		}
+
+	@media screen and (max-width: 770px) {
+		#girl-inner #cross-leg {
+			width: 60%;
+			margin: 0px 20%;
+		}
+		#girl .down-carrot {
+			margin:10px 42%;
+			margin-bottom:0;
+			padding-bottom:0;
+		}
+	}
+	@media screen and (max-width: 500px) {
+		#girl-inner #cross-leg {
+			width: 90%;
+			margin: 0px 5%;
+		}
+		#girl h2 {
+			font-size: 30px;
+			margin-top:0;
+		}
+			#girl .tagline {
+				font-size: 24px;
+			}
+	}
+#color-sections {
+	width:100%;
+	position:absolute;
+	z-index:2000;
+	left:0;
+	top:0;
+	height:100%;
+}
+	#color-sections .color-section {
+		width:12.5%;
+		float:left;
+		padding:0;
+		height:100%;
+	}
+
+/** Second panel - #about-section **/
+
+
+
+
+
+
+
