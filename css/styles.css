@@ -44,6 +44,11 @@ body {
 	width: 100%;
 }
 
+html, body {
+	height:100%;
+	width: 100%;
+}
+
 @font-face {
     font-family: 'LMP';
     src: url('littlemisspriss-webfont.eot');
@@ -373,9 +378,15 @@ a:hover {
 .youtube h2, .youtube p {
 	margin-left:30px;
 }
-.events img {
+.youtube .org {
+	float:left;
+	width:44%;
+	margin:10px 3%;
+}
+.events img, .youtube .org img {
 	width:100%;
 }
+
 
 @media screen and (max-height: 600px) {
 	#girl-svg {
@@ -508,6 +519,10 @@ a:hover {
 	#register-1 {
 		display:none;
 	}
+}
+
+#girl, #about-section, #color-section, #schedule-section {
+	height:100%;
 }
 
 
