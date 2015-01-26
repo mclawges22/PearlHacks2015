@@ -1,25 +1,28 @@
 $( document ).ready(function() {
     var windowHeight = $(window).height();
     var windowWidth = $(window).width();
-
-    if (windowWidth < 770) {
-    	$("#menu-wrapper").hide();
-    }
+    
     $("#girl").css("min-height", windowHeight);
-    $("#color-sections").css("height", $("#girl").height());
+    $("#color-sections").css("height", $("#girl").height()-60);
+
+    $(window).scroll(function () {
+	    if ($(this).scrollTop() > windowHeight) {
+	    	$("#down-triangle").css("position", "fixed");
+    		$("#down-triangle").css('top', 0);
+	        $("#down-triangle-mobile").css('position', 'fixed');
+	        $("#down-triangle-mobile").css('top', 0);
+    	}else {
+    		$("#down-triangle").css("position", "relative");
+	        $("#down-triangle-mobile").css('position', 'relative');
+    	}
+    });
 
     $(window).resize(function () {
     	windowHeight = $(window).height();
     	windowWidth = $(window).width();
     	$("#girl").css("min-height", windowHeight);
     	$("#color-sections").css("height", $("#girl").height());
-    	if (windowWidth < 770) {
-	    	$("#menu-wrapper").hide();
-	    } else {
-	    	$("#menu-wrapper").show();
-	    }
     });
-
 });
 
 var COLORS = [
@@ -59,6 +62,7 @@ function pinkGirl() {
 	$(".hair").attr("fill", "#f44780");
 	$(".shape").attr("fill", "#f44780");
 	$("em").css("color", "#f44780");
+	$(".question").css("color", "#f44780");
 	$("strong").css("color", "#f492a7");
 }
 
@@ -72,8 +76,8 @@ function redGirl() {
 	$(".hair").attr("fill", "#b73023");
 	$(".shape").attr("fill", "#b73023");
 	$("em").css("color", "#ff7a65");
+	$(".question").css("color", "#ff7a65");
 	$("strong").css("color", "#b73023");
-	var hair = $(".hair");
 }
 function orangeGirl() {
 	$("#girl").animate({
@@ -85,6 +89,7 @@ function orangeGirl() {
 	$(".hair").attr("fill", "#ff8700");
 	$(".shape").attr("fill", "#ff8700");
 	$("em").css("color", "#ff8700");
+	$(".question").css("color", "#ff8700");
 	$("strong").css("color", "#ffb35c");
 }
 function yellowGirl() {
@@ -97,6 +102,7 @@ function yellowGirl() {
 	$(".hair").attr("fill", "#FCD100");
 	$(".shape").attr("fill", "#FCD100");
 	$("em").css("color", "#FCD100");
+	$(".question").css("color", "#FCD100");
 	$("strong").css("color", "#FFE06C");
 }
 function greenGirl() {
@@ -109,6 +115,7 @@ function greenGirl() {
 	$(".hair").attr("fill", "#086108");
 	$(".shape").attr("fill", "#086108");
 	$("em").css("color", "#086108");
+	$(".question").css("color", "#086108");
 	$("strong").css("color", "#00B50D");
 }
 function turquoiseGirl() {
@@ -121,6 +128,7 @@ function turquoiseGirl() {
 	$(".hair").attr("fill", "#00DCB4");
 	$(".shape").attr("fill", "#00DCB4");
 	$("em").css("color", "#08B5EE");
+	$(".question").css("color", "#08B5EE");
 	$("strong").css("color", "#00DCB4");
 }
 function blueGirl() {
@@ -133,6 +141,7 @@ function blueGirl() {
 	$(".hair").attr("fill", "#3291F9");
 	$(".shape").attr("fill", "#3291F9");
 	$("em").css("color", "#0b31aa");
+	$(".question").css("color", "#0b31aa");
 	$("strong").css("color", "#3291F9");
 }
 function purpleGirl() {
@@ -145,5 +154,6 @@ function purpleGirl() {
 	$(".hair").attr("fill", "#a27994");
 	$(".shape").attr("fill", "#a27994");
 	$("em").css("color", "#462959");
+	$(".question").css("color", "#462959");
 	$("strong").css("color", "#a27994");
 }
