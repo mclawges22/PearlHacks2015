@@ -94,6 +94,7 @@ a:hover, a:active {
 		margin: 5px 0;
 		width:100%;
 		margin-left:0;
+		font-weight: 500
 	}
 		#girl .tagline {
 			font-size: 1.9em;
@@ -160,6 +161,7 @@ a:hover, a:active {
 	position: relative;
 	z-index:1050;
 }
+
 	@media screen and (max-width: 900px) {
 		#down-triangle {
 			width: 44%;

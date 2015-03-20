@@ -3,7 +3,7 @@ $( document ).ready(function() {
     var windowWidth = $(window).width();
     
     $("#girl").css("min-height", windowHeight);
-    $("#color-sections").css("height", $("#girl").height()-60);
+    $("#color-sections").css("height", $("#girl").height()-100);
 
     $(window).scroll(function () {
 	    if ($(this).scrollTop() > windowHeight) {
